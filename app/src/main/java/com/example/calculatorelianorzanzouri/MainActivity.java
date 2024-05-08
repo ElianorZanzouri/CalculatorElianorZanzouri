@@ -77,6 +77,10 @@ public class MainActivity extends AppCompatActivity {
                         result.setText(res+"");
                         break;
                     case "/":
+                        if(num2==0){
+                            result.setText("ERROR");
+                            break;
+                        }
                         res=num1/num2;
                         result.setText(res+"");
                         break;
